@@ -1,0 +1,67 @@
+<Bid>
+	<Name>1C</Name>
+	<Desc>12-21 points&#xA;min 3 cards in C&#xA;Bid 1C if 3 cards C and 3 cards D&#xA;Bid 1D if 4 cards C and 4 cards D</Desc>
+	<Responses>
+		<Bid>
+			<Name>1D</Name>
+			<Desc>6-9 points&#xA; min 4 cards in D</Desc>
+			<Responses>
+				<Bid>
+					<Name>1H or 1S<Name>
+					<Desc>12-17 points&#xA;min 4 cards in H or S</Desc>
+					<Responses>
+						<Bid>
+							<Name>1NT</Name>
+							<Desc>6-10 points&#xA; No support for H-S</Desc>
+							<Responses>
+								<Bid>
+									<Name>Pass&#xA;2NT</Name>
+									<Desc>12-14Points&#xA;15-17Points</Desc>
+									<Responses>
+										<Bid>
+											<Name>Pass&#xA;3NT</Name>
+											<Desc>&lt;9 points&#xA;9-10 points</Desc>
+										</Bid>
+									</Responses>
+								</Bid>
+							</Responses>
+						</Bid>
+						<Bid>
+							<Name>2H or 2S</Name>
+							<Desc>6-10points&#xA;min 4 card support for H or S</Desc>
+							<Responses>
+								<Bid>
+									<Name>Pass</Name>
+									<Desc>12-14 points</Desc>
+								</Bid>
+								<Bid>
+									<Name>3H or 3S</Name>
+									<Desc>15-17 points</Desc>
+									<Responses>
+										<Bid>
+											<Name>Pass&#xA;4H or 4S</Name>
+											<Desc>6-7Points&#xA;9-10Points</Desc>
+										</Bid>
+									</Responses>
+								</Bid>
+								<Bid>
+									<Name>4H or 4S</Name>
+									<Desc>18-19 points</Desc>
+								</Bid>								
+							</Responses>
+						</Bid>
+					</Responses>
+				</Bid>
+			</Responses>
+		</Bid>
+	</Responses>
+</Bid>
+<Bid>
+	<Name>1D</Name>
+</Bid>
+<Bid>
+	<Name>1H</Name>
+</Bid>
+<Bid>
+	<Name>1S</Name>
+</Bid>
