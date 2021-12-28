@@ -69,3 +69,24 @@ function displayp3nt() {
         document.getElementById("p3ntdescription").style.display = "none";
     }
 }
+
+// Code to retrieve data from xml file
+/*There may be an error in the format of the file as the data does print in the console but it doesn't like the
+format of the xml file for some reason*/
+// Additionally, this function will only work if CORS permissions are disabled as it has to acess the local computer
+// This error will not occur if everything is on a server
+function getInput() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        console.log(this);
+      }
+    };
+    xmlhttp.open("GET", "bids.xml" , true);
+    xmlhttp.send();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Functions output will show in the console as soon as the index.html is opened
+    getInput();
+});
