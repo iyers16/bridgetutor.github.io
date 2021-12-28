@@ -7,7 +7,7 @@
 			<Desc>6-9 points&#xA; min 4 cards in D</Desc>
 			<Responses>
 				<Bid>
-					<Name>1H or 1S<Name>
+					<Name>1H or 1S</Name>
 					<Desc>12-17 points&#xA;min 4 cards in H or S</Desc>
 					<Responses>
 						<Bid>
