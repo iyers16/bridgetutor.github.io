@@ -1,0 +1,7 @@
+In order to get the data locally, we need to disable a security permission in the browser.
+I'm not quite sure how to do this in other browsers, but in firefox this is how.
+
+1. Type about:config and then accept the risk.
+2. search for filuri
+3. click on the thing that says security.fileuri... etc and set it to false.
+4. Then when you lauch the index.html in firefox and check the console there shouldn't be any errors except that to do with the files formatting. 
