@@ -71,22 +71,37 @@ function displayp3nt() {
 }
 
 // Code to retrieve data from xml file
-/*There may be an error in the format of the file as the data does print in the console but it doesn't like the
-format of the xml file for some reason*/
-// Additionally, this function will only work if CORS permissions are disabled as it has to acess the local computer
-// This error will not occur if everything is on a server
 function getInput() {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        console.log(this);
-      }
-    };
-    xmlhttp.open("GET", "bids.xml" , true);
-    xmlhttp.send();
+	var xmlhttp = new XMLHttpRequest();
+
+	xmlhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			//"this" returns entire xml object, response & responseText properties of xml object return xml content
+			console.log(this.response);
+			// document.getElementById("demo").innerHTML = this.response;
+			testXMLParser(this);
+		}
+	};
+
+	xmlhttp.open("GET", "bids.xml" , true);
+	xmlhttp.send();
+}
+
+//Test function to parse and display XML data
+function testXMLParser(xml) {
+
+	var xmlDoc = xml.responseXML;
+	var txt = "";
+	var x = xmlDoc.getElementsByTagName("Name");
+
+	for (let i = 0; i< x.length; i++) {
+		txt += x[i].childNodes[0].nodeValue + "<br>";
+	}
+
+	document.getElementById("demo").innerHTML = txt;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
     // Functions output will show in the console as soon as the index.html is opened
-    getInput();
+	getInput();
 });
