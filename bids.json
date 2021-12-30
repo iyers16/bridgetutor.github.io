@@ -1,0 +1,72 @@
+{
+    "Bids": [
+        {
+            "Name": "1C",
+            "Description": "12-21 points\nmin 3 cards in C\nBids 1C if 3 cards C and 3 cards D\nBids 1D if 4 cards C and 4 cards D",
+            "Bids": [
+                {
+                    "Name": "1D",
+                    "Description": "6-9 points\n min 4 cards in D",
+                    "Bids": [
+                    {
+                        "Name": "1H or 1S",
+                        "Description": "12-17 points\nmin 4 cards in H or S",
+                        "Bids": [
+                            {
+                                "Name": "1NT",
+                                "Description": "6-10 points\n No support for H-S",
+                                "Bids": [
+                                    {
+                                        "Name": "Pass\n2NT",
+                                        "Description": "12-14Points\n15-17Points",
+                                        "Bids": [
+                                            {
+                                                "Name": "Pass\n3NT",
+                                                "Description": "<9 points\n9-10 points"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "Name": "2H or 2S",
+                                "Description": "6-10points\nmin 4 card support for H or S",
+                                "Bids": [
+                                    {
+                                        "Name": "Pass",
+                                        "Description": "12-14 points"
+                                    
+                                    },
+                                    {
+                                        "Name": "3H or 3S",
+                                        "Description": "15-17 points",
+                                        "Bids": [
+                                            {
+                                                "Name": "Pass\n4H or 4S",
+                                                "Description": "6-7Points\n9-10Points"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "Name": "4H or 4S",
+                                        "Description": "18-19 points"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "1D"
+        },
+        {
+            "Name": "1H"
+        },
+        {
+            "Name": "1S"
+        }
+    ]
+}
