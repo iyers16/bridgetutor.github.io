@@ -1,18 +1,5 @@
-button  {
-    width: 11.5em;
-    height: 3em;
-    background-color: rgb(255, 255, 255);
-}
-
-th, td {
-    width: 17%;
-}
-
-table, th, td {
-    border:1px solid black;
-    border-collapse: collapse;
-    margin:auto;
-
+body {
+    background-image: url('./green.jpg');
 }
 
 header {
@@ -23,4 +10,37 @@ header {
     margin-left: auto;
     width: 50%;
     text-align: center;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 0.6em;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Garamond';
+    font-weight: 700;
+    transition: box-shadow 100ms ease-in-out, color 100ms ease-in-out;
+}
+button:hover,
+button:focus {
+    color: rgb(0, 0, 0);
+    border: 2px solid #c90606;
+    outline: 0;
+    box-shadow: 0 0 40px 40px #c90606 inset;
 }
