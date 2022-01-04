@@ -5,128 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="./index.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/collapsable.css">
+    <link rel="stylesheet" href="./css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="./css/Treant.css">
 </head>
 <body>
     <header><h1>Iyer's Bridge Bidding Tutorial</h1></header>
-    <main>
-
-        <div id="demo">123</div>
-        <button class="first">Test</button>
-
+    
+    <div id="demo">123</div>
+    <button class="first">Test</button>
         
-        <!-- <div id="calc">
-            <table>
-                <tr>
-                    <th>Opener</th>
-                    <th>Responder</th>
-                    <th>Opener</th>
-                    <th>Responder</th>
-                    <th>Opener</th>
-                    <th>Responder</th>
-                </tr>
-                <tr>
-                    <td>
-                        <button onclick="display1C()"> 1C </button>
-                        
-                    </td>
-                    <td>
-                        <div id="on1c" style="display: none;">
-                            <button onclick="display1D()"> 1D </button>
-                            <br>
-                            <button> 1H </button>
-                            <br>
-                            <button> 1S </button>
-
-                        </div>
-                    </td>
-                    <td>
-                        <div id="on1d" style="display: none;">
-                            <button onclick="display1H1S()"> 1H / 1S </button>
-                            <br>
-                            <button> 1NT </button>
-                            <br>
-                            <button> 2C / 2D </button>
-                            <br>
-                            <button> 1H / 2S </button>
-                            <br>
-                            <button> 3C / 3D </button>
-                            <br>
-                            <button> 2NT </button>
-
-                        </div>
-                    </td>
-                    <td>
-                        <div id="on1h1s" style="display: none;">
-                            <button onclick="display1NT()"> 1NT </button>
-                            <br>
-                            <button> 2H / 2S </button>
-                        </div>
-                    </td>
-                    <td>
-                        <div id="on1nt" style="display: none;">
-                            <button onclick="displayp2nt()">Pass <br> 2NT</button>
-                        </div>
-                    </td>
-                    <td>
-                        <div id="onp2nt" style="display: none;">
-                            <button onclick="displayp3nt()">Pass <br> 3NT</button>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div id="1cdescription" style="display: none;">
-                        12-21 Pts; <br>
-                        min 3 Cards in C; <br>
-                        Bid 1C if <br>
-                        3 Cards C & 3 Cards D;<br>
-                        Bid 1D if<br>
-                        4 Cards C & 4 Cards D
-                        </div>
-                    </td>
-                    <td>
-                        <div id="1ddescription" style="display: none;">
-                            6+ Pts;
-                            <br>
-                            min 4 Cards in D
-                        </div>
-                    </td>
-                    <td>
-                        <div id="1h1sdescription" style="display: none;">
-                            min 4 Cards in H / S
-                            <br>
-                            12-17 Pts;
-
-                        </div>
-                    </td>
-                    <td>
-                        <div id="1ntdescription" style="display: none;">
-                            6-9 Pts;
-                            <br>
-                            No support for H / S
-                        </div>
-                    </td>
-                    <td>
-                        <div id="p2ntdescription" style="display: none;">
-                            12-14 pts
-                            <br>
-                            15-17 pts
-                        </div>
-                    </td>
-                    <td>
-                        <div id="p3ntdescription" style="display: none;">
-                            &lt; 9 Pts
-                            <br>
-                            9-10 pts
-                        </div>
-                    </td>
-                    
-                </tr>
-            </table>
-        </div> -->
-        
-    </main>
+    <div class="chart" id="collapsable-example"></div>
+    <script src="./js/raphael.js"></script>
+    <script src="./js/Treant.js"></script>
+    
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.easing.js"></script>
+    
+    
+    <script src="./js/collapsable.js"></script>
+    <script>
+        tree = new Treant( chart_config );
+    </script>
 </body>
 </html>
