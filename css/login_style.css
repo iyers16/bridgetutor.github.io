@@ -1,0 +1,30 @@
+body {
+    background-image: url('../img/green.jpg');
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#login-sector {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-inp {
+    width: 200px;
+}
+
+.entries {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.login-inp {
+    height: 15px;
+    align-self: center;
+}
+
+#submit-login {
+    width: 50px;    
+}
