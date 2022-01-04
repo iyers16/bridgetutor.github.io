@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="./index.js"></script>
-    <script language="javascript" type="text/javascript"  src="./jquery-1.6.1.min.js"></script>
-    <script language="javascript" type="text/javascript" src="./arbor.js" ></script>
-    <script language="javascript" type="text/javascript" src="./graphics.js" ></script>
-    <script language="javascript" type="text/javascript" src="./renderer.js" ></script>
-    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/collapsable.css">
+    <link rel="stylesheet" href="./css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="./css/Treant.css">
 </head>
 <body>
     <header><h1>Iyer's Bridge Bidding Tutorial</h1></header>
@@ -18,28 +17,17 @@
     <div id="demo">123</div>
     <button class="first">Test</button>
         
-    <canvas id="viewport" width="1980" height="700"></canvas>
-    <script language="javascript" type="text/javascript">
-        var sys = arbor.ParticleSystem(1, 1, 1000, true, 55, 0.01, 0.8);
-        //sys.parameters({gravity:true});
-        sys.renderer = Renderer("#viewport") ;
-        var animals = sys.addNode('Animals',
-                                {'color':'red',
-                                'shape':'dot',
-                                'label':'Animals'});
-
-        var dog = sys.addNode('dog',
-                            {'color':'green',
-                            'shape':'dot',
-                            'label':'dog'});
-
-        var cat = sys.addNode('cat',
-                            {'color':'blue',
-                            'shape':'dot',
-                            'label':'cat'});
-
-        sys.addEdge(animals, dog);
-        sys.addEdge(animals, cat);
+    <div class="chart" id="collapsable-example"></div>
+    <script src="./js/raphael.js"></script>
+    <script src="./js/Treant.js"></script>
+    
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.easing.js"></script>
+    
+    
+    <script src="./js/collapsable.js"></script>
+    <script>
+        tree = new Treant( chart_config );
     </script>
 </body>
 </html>

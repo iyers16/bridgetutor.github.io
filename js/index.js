@@ -1,4 +1,4 @@
-import data from "./bids.json" assert {type : "json"};
+import data from "../data/bids.json" assert {type : "json"};
 const treeString = JSON.stringify(data);
 const BidTree = JSON.parse(treeString);
 console.log(BidTree.Bids[0].Name);

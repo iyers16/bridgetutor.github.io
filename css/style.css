@@ -1,9 +1,8 @@
-/* body {
-    background-image: url('./green.jpg');
-} */
+body {
+    background-image: url('../img/green.jpg');
+}
 
 header {
-    /* center the element */
     right: 0;
     left: 0;
     margin-right: auto;
